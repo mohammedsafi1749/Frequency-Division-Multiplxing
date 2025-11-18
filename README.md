@@ -79,3 +79,4 @@ corresponding RXCLK, RXSYNC of the receiver section respectively.
        plot(t, demux_signals(i, :));
        title('Demultiplexed Signal f=' + string(freqs(i)));
     end
+### Output Waveforms
