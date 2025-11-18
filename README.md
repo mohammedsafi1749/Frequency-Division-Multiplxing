@@ -34,3 +34,48 @@ corresponding RXCLK, RXSYNC of the receiver section respectively.
 <img width="998" height="452" alt="image" src="https://github.com/user-attachments/assets/c8b862ca-8606-4f75-837d-b3b78544c41d" />
 
 ### Program
+    t = linspace(0, 1, 1000);
+    fs = 1000; 
+
+    freqs = [4, 8, 12, 16, 20, 24];
+
+    signals = zeros(6, length(t));
+    for i = 1:6
+      signals(i, :) = sin(2 * %pi * freqs(i) * t);
+    end
+
+    fdm_signal = zeros(1, length(t));
+    for i = 1:6
+       fdm_signal = fdm_signal + signals(i, :);
+    end
+
+    order = 50;
+    cutoff_freq = 8 / (fs/2); 
+    h = ffilt("lp", order, cutoff_freq);
+
+    demux_signals = zeros(6, length(t));
+    for i = 1:6
+       mixed = fdm_signal .* sin(2 * %pi * freqs(i) * t);
+       demux_signals(i, :) = filter(h, 1, mixed);
+    end
+
+    scf(1);
+    clf;
+    for i = 1:6
+       subplot(3,2,i);
+       plot(t, signals(i, :));
+       title('Original Signal f=' + string(freqs(i)));
+    end
+
+    scf(2);
+    clf;
+    plot(t, fdm_signal);
+    title('FDM Signal');
+
+    scf(3);
+    clf;
+    for i = 1:6
+       subplot(3,2,i);
+       plot(t, demux_signals(i, :));
+       title('Demultiplexed Signal f=' + string(freqs(i)));
+    end
