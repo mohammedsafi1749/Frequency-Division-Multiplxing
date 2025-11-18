@@ -32,3 +32,5 @@ corresponding RXCLK, RXSYNC of the receiver section respectively.
 8. Take the observations as mentioned below.
 ### Kit Diagram
 <img width="998" height="452" alt="image" src="https://github.com/user-attachments/assets/c8b862ca-8606-4f75-837d-b3b78544c41d" />
+
+### Program
