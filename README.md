@@ -80,3 +80,10 @@ corresponding RXCLK, RXSYNC of the receiver section respectively.
        title('Demultiplexed Signal f=' + string(freqs(i)));
     end
 ### Output Waveforms
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/f9a56907-be95-4f1e-a3a5-1aa534a0fd35" />
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/9daad39c-2371-4b02-9788-425cfc99dc6d" />
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/492a5b75-ec9f-4aad-8072-18c23451b839" />
+
+### Tabulation 
