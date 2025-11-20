@@ -87,8 +87,9 @@ corresponding RXCLK, RXSYNC of the receiver section respectively.
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/492a5b75-ec9f-4aad-8072-18c23451b839" />
 
 ### Tabulation 
-![WhatsApp Image 2025-11-18 at 20 37 19_96391ba3](https://github.com/user-attachments/assets/1e87c4d2-7e5a-4201-9a64-b0845561cb60)
+![WhatsApp Image 2025-11-20 at 13 07 03_39701a37](https://github.com/user-attachments/assets/8f8b5395-e290-4006-be7a-8f720b4f4273)
 
+![WhatsApp Image 2025-11-20 at 13 07 03_8890941f](https://github.com/user-attachments/assets/24c14a4c-13c2-4605-8762-b3c9d9500bc2)
 
 ### Result
 Thus the time division multiplexing is done experimentally and output is verified.
